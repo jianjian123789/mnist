@@ -34,7 +34,7 @@ def initialize(shape,stddev=0.1):
     return tf.truncated_normal(shape,stddev=stddev)
     
 
-data_dir='./mnist_data/'
+data_dir='/tmp/mnist_data/'
 mnist=input_data.read_data_sets(data_dir,one_hot=True)
 
 # 2.前传：输入（值、轮数）、权重、输出
